@@ -54,7 +54,7 @@ function FileItem({ file, onRemove }) {
 
     return (
         <div className="flex gap-2 md:gap-4 rounded-lg border border-gray-200 p-4 flex-col md:flex-row md:items-center justify-center md:justify-between">
-            <img src={file.preview} alt={file.name} className="h-15 w-15 md:h-20 md:w-20 mx-auto overflow-hidden rounded-md object-cover items-center justify-center" />
+            <img src={file.preview} alt={file.name} className="h-15 w-auto md:h-20 mx-auto overflow-hidden rounded-md object-cover items-center justify-center" />
 
             <div className="min-w-0 flex-1 items-center justify-center text-center md:text-left md:ml-4 ">
                 <p className="truncate text-sm md:text-lg font-medium">{file.name}</p>
