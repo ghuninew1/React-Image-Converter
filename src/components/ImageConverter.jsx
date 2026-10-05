@@ -227,6 +227,10 @@ function ImageConverter() {
                     Convert to {settings.format.toUpperCase()} ({files.length} image{files.length > 1 ? "s" : ""})
                 </button>
             )}
+
+            <p className="mt-4 text-center text-sm text-gray-500">
+                Powered by{"GhuniNew"}. All rights reserved. <a href="https://github.com/ghuninew1/React-Image-Converter" className="text-blue-600 hover:underline">GitHub</a>
+            </p>
         </section>
     );
 }
