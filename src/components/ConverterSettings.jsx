@@ -12,7 +12,7 @@ function ConverterSettings({ settings, onChange }) {
     const isPng = settings.format === "png";
 
     return (
-        <section className="mt-6 rounded-xl bg-white p-6 shadow-sm">
+        <section className="mt-4 md:mt-6  rounded-xl bg-white p-6 shadow-sm md:col-span-2">
             <h2 className="text-lg font-semibold">Conversion Settings</h2>
 
             <div className="mt-6 grid gap-6 sm:grid-cols-2">
@@ -47,6 +47,7 @@ function ConverterSettings({ settings, onChange }) {
                             type="range"
                             min="1"
                             max="100"
+                            step="1"
                             value={settings.quality}
                             onChange={handleChange}
                             disabled={isPng}
@@ -73,6 +74,8 @@ function ConverterSettings({ settings, onChange }) {
                         name="width"
                         type="number"
                         min="1"
+                        step="1"
+                        inputMode="numeric"
                         value={settings.width}
                         onChange={handleChange}
                         placeholder="Original"
@@ -90,6 +93,8 @@ function ConverterSettings({ settings, onChange }) {
                         name="height"
                         type="number"
                         min="1"
+                        step="1"
+                        inputMode="numeric"
                         value={settings.height}
                         onChange={handleChange}
                         placeholder="Original"

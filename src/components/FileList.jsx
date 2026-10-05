@@ -16,7 +16,7 @@ function FileList({ files, onRemove, onClear }) {
                     </p>
                 </div>
 
-                <button type="button" onClick={onClear} className="text-sm font-medium text-red-600 hover:text-red-700">
+                <button type="button" onClick={onClear} className="text-sm font-medium text-red-600 hover:text-red-700 md:text-base">
                     Clear All
                 </button>
             </div>

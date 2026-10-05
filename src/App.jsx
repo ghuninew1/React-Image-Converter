@@ -16,6 +16,14 @@ function App() {
                         GitHub
                     </a>
                 </p>
+                <p className="mt-2 text-center text-sm text-gray-500">
+                    <a
+                        href="https://github.com/ghuninew1/React-Image-Converter/blob/main/README.md"
+                        className="text-blue-600 hover:underline"
+                    >
+                        Readme and Documentation
+                    </a>
+                </p>
             </div>
         </main>
     );
