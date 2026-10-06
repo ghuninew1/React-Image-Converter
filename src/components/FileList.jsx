@@ -6,12 +6,12 @@ function FileList({ files, onRemove, onClear }) {
     }
 
     return (
-        <section className="mt-6 rounded-xl bg-white p-6 shadow-sm">
+        <section className="mt-6 rounded-xl p-6 shadow-sm">
             <div className="mb-4 flex items-center justify-between">
                 <div>
                     <h2 className="font-semibold">Selected Images</h2>
 
-                    <p className="mt-1 text-sm text-gray-500">
+                    <p className="mt-1 text-sm">
                         {files.length} image{files.length > 1 ? "s" : ""}
                     </p>
                 </div>

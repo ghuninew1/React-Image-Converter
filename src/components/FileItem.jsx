@@ -59,7 +59,7 @@ function FileItem({ file, onRemove }) {
             <div className="min-w-0 flex-1 items-center justify-center text-center md:text-left md:ml-4 ">
                 <p className="truncate text-sm md:text-lg font-medium">{file.name}</p>
 
-                <div className="mt-1 text-sm text-gray-500">
+                <div className="mt-1 text-sm">
                     <p>Original: {formatFileSize(file.size)}</p>
 
                     <p>

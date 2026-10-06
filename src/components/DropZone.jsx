@@ -37,7 +37,7 @@ function DropZone({ onFiles }) {
             onDrop={handleDrop}
             onClick={() => inputRef.current?.click()}
             className={cx(
-                "flex min-h-10 md:min-h-20 cursor-pointer flex-col items-center justify-center rounded-xl border-2 border-dashed p-1 text-center transition-colors",
+                "flex min-h-10 md:min-h-20 cursor-pointer flex-col items-center justify-center rounded-xl border-2 border-dashed p-1 text-center transition-colors bg-gray-100 text-gray-900 dark:bg-gray-900 dark:text-white",
                 isDragging ? "border-blue-500 bg-blue-500" : "border-gray-300 bg-blue-50 hover:border-gray-400",
                 hasFiles && "border-green-500 bg-green-100 hover:border-green-400 hover:bg-green-200",
             )}
@@ -55,9 +55,9 @@ function DropZone({ onFiles }) {
 
             <h2 className="text-md md:text-lg font-semibold">Drop images here</h2>
 
-            <p className="text-sm md:text-base text-gray-500">or click to browse files</p>
+            <p className="text-sm md:text-base">or click to browse files</p>
 
-            <p className="m-2 text-xs md:text-sm text-gray-400">JPG, PNG, WebP, AVIF and other browser-supported formats</p>
+            <p className="m-2 text-xs md:text-sm">JPG, PNG, WebP, AVIF and other browser-supported formats</p>
         </div>
     );
 }
