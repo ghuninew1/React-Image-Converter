@@ -38,8 +38,8 @@ function DropZone({ onFiles }) {
             onClick={() => inputRef.current?.click()}
             className={cx(
                 "flex min-h-10 md:min-h-20 cursor-pointer flex-col items-center justify-center rounded-xl border-2 border-dashed p-1 text-center transition-colors bg-gray-100 text-gray-900 dark:bg-gray-900 dark:text-white",
-                isDragging ? "border-blue-500 bg-blue-500" : "border-gray-300 bg-blue-50 hover:border-gray-400",
-                hasFiles && "border-green-500 bg-green-100 hover:border-green-400 hover:bg-green-200",
+                isDragging ? "border-blue-500 hover:border-blue-400" : "border-gray-300 hover:border-gray-400",
+                hasFiles && "border-green-500 hover:border-green-400",
             )}
         >
             <input

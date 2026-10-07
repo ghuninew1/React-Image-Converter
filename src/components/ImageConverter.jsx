@@ -286,16 +286,16 @@ function ImageConverter() {
 
             <ConverterSettings settings={settings} onChange={handleSettingsChange} />
             {isConverting && (
-                <div className="mt-6 rounded-xl bg-white p-6 shadow-sm">
+                <div className="mt-6 rounded-xl p-6 shadow-sm">
                     <div className="flex items-center justify-between">
                         <span className="text-sm font-medium">
                             {isCreatingZip ? "Creating ZIP..." : "Converting..."}
                         </span>
 
-                        <span className="text-sm text-gray-500">{progress}%</span>
+                        <span className="text-sm">{progress}%</span>
                     </div>
 
-                    <div className="mt-3 h-2 overflow-hidden rounded-full bg-gray-200">
+                    <div className="mt-3 h-2 overflow-hidden rounded-full">
                         <div
                             className="h-full rounded-full bg-blue-600 transition-all"
                             style={{ width: `${progress}%` }}
