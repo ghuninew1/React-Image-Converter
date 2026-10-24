@@ -279,7 +279,7 @@ function ImageConverter() {
     };
 
     return (
-        <section>
+        <section className="mt-6">
             <DropZone onFiles={handleFiles} />
 
             <FileList files={files} onRemove={handleRemove} onClear={handleClear} />

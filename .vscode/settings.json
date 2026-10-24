@@ -1,0 +1,8 @@
+{
+    "files.associations": {
+        "wrangler.json": "jsonc",
+        "*.css": "tailwindcss"
+    },
+    "tailwindCSS.lint.suggestCanonicalClasses": "ignore",
+    "js/ts.preferences.autoImportFileExcludePatterns": ["lucide-react"]
+}

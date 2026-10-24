@@ -4,9 +4,13 @@ import ThemeToggle from "./components/ThemeToggle";
 
 function App() {
     return (
-        <main className="relative min-h-screen bg-gray-100 text-gray-900 dark:bg-gray-900 dark:text-white">
+        <main className="relative flex min-h-screen bg-background font-sans text-foreground antialiased selection:bg-cyan-500 selection:text-white">
+            <div className="pointer-events-none absolute top-1/4 -left-20 z-0 size-96 rounded-full bg-green-500/5 blur-3xl" />
+            <div className="pointer-events-none absolute right-0 bottom-1/4 z-0 size-96 rounded-full bg-red-400/5 blur-3xl" />
+            <div className="pointer-events-none absolute top-1/2 left-1/2 z-0 size-[500px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-cyan-500/5 blur-[120px]" />
+
+            <div className="mx-auto max-w-5xl w-full px-6 py-8">
             <ThemeToggle />
-            <div className="mx-auto max-w-6xl px-6 py-8">
                 <Header />
                 <ImageConverter />
                 <p className="mt-4 text-center text-sm">
